@@ -75,6 +75,15 @@ void q07(){
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
+void q08(){
+    int num, num1, subtracao;
+    printf("Digite o primeiro número\n");
+    scanf("%d", &num);
+    printf("Digite o segundo número\n");
+    scanf("%d", &num1);
+    subtracao = (num-num1);
+    printf("A diferença entre %d e %d é: %d \n", num, num1, subtracao);
+}
 
 //9. Faça um programa que leia umnúmero real e imprima ¼ deste número.
 
@@ -137,6 +146,6 @@ void q07(){
 //    necessário também ler o valor da cotação do dólar.
 
 int main () {
-    q07();
+    q08();
     return EXIT_SUCCESS;
 }

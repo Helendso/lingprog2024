@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
 /*
 Exercícios sobre os comandos básicos em C
@@ -44,7 +45,16 @@ printf("Os numeros digitados são: %f, %f\n", num1, num2 );
 }
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
+void q06() {
+    int numero;
+    printf("Digite um número inteiro");
+    scanf("%d," &numero);
+    int antecessor = (numero - 1);
+    int sucessor = (numero + 10);
+    printf("O número digitado é: %d seu antecessor é: %d e seu sucessor é %d\n", numero, antecessor, sucessor);
 
+    
+}
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
 
@@ -112,6 +122,6 @@ printf("Os numeros digitados são: %f, %f\n", num1, num2 );
 //    necessário também ler o valor da cotação do dólar.
 
 int main () {
-    q05();
+    q06();
     return EXIT_SUCCESS;
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+
 
 /*
 Exercícios sobre os comandos básicos em C
@@ -47,16 +47,31 @@ printf("Os numeros digitados são: %f, %f\n", num1, num2 );
 //   antecessor e o seu sucessor.
 void q06() {
     int numero;
-    printf("Digite um número inteiro");
-    scanf("%d," &numero);
-    int antecessor = (numero - 1);
-    int sucessor = (numero + 10);
-    printf("O número digitado é: %d seu antecessor é: %d e seu sucessor é %d\n", numero, antecessor, sucessor);
+    int num1;
+    int num2;
+    printf("Digite um número inteiro \n");
+    scanf("%d", &numero);
+    num1 = (numero-1);
+    num2 = (numero+1);
+    printf("O número digitado é: %d seu antecessor é: %d e seu sucessor é %d\n", numero, num1, num2);
 
     
 }
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
+void q07(){
+    char nome[50], endereco[50], numero[50];
+    printf ("Digite o Nome do Cliente: \n");
+    fgets(nome, 50, stdin);
+    printf ("Digite o Endereço: \n");
+    fgets(endereco, 50, stdin);
+    printf ("Digite o Telefone: \n");
+    fgets(numero, 50, stdin);
+    printf("Nome: %s \n Endereço: %s \n Telefone: %s \n", nome, endereco, numero);
+    
+
+
+}
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
@@ -122,6 +137,6 @@ void q06() {
 //    necessário também ler o valor da cotação do dólar.
 
 int main () {
-    q06();
+    q07();
     return EXIT_SUCCESS;
 }

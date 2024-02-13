@@ -85,16 +85,47 @@ void q08(){
     printf("A diferença entre %d e %d é: %d \n", num, num1, subtracao);
 }
 
-//9. Faça um programa que leia umnúmero real e imprima ¼ deste número.
+//9. Faça um programa que leia um número real e imprima ¼ deste número.
+void q09(){
+    float num, num1;
+    printf("Digite um número \n");
+    scanf("%f", &num);
+    num1 = (num/4.0);
+    printf("¼ de %.2f é: %.2f \n", num, num1 );
+}
 
 //10. Faça um programa que leia três números reais e calcule a
 //    média aritmética destes números. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
+void q10(){
+    int num, num1, num2, media;
+    printf("Digite o primeiro número\n");
+    scanf("%d", &num);
+    printf("Digite o segundo número\n");
+    scanf("%d", &num1);
+    printf("Digite o terceiro número\n");
+    scanf("%d", &num2);
+    media = (num+num1+num2)/3.0;
+    printf("A média dos números %d, %d e %d é: %d \n", num, num1, num2, media);
+}
 
 //11. Faça um programa que leia dois números reais e calcule as
 //    quatro operações básicas entre estes dois números, adição,
 //    subtração,multiplicação e divisão. Ao final, o programa
 //    deve imprimir os resultados dos cálculos.
+void q11(){
+    float num, num1, mult, div, soma, sub;
+    printf("Digite o Primeiro número \n");
+    scanf("%f", &num);
+    printf("Digite o Segundo número \n");
+    scanf("%f", &num1);
+    soma = num+num1;
+    sub = num-num1;
+    mult = num*num1;
+    div = num/num1;
+    printf("Os resultados das operações são: \n Adição: %.2f \n Subtração: %.2f \n Multiplicação: %.2f \n Divisão: %.2f \n", soma, sub, mult, div);
+
+}
 
 //12. Faça um programa que leia um número real e calcule o
 //    quadrado deste número. Ao final, o programa deve
@@ -146,6 +177,6 @@ void q08(){
 //    necessário também ler o valor da cotação do dólar.
 
 int main () {
-    q08();
+    q11();
     return EXIT_SUCCESS;
 }

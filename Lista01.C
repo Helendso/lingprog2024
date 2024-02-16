@@ -130,10 +130,23 @@ void q11(){
 //12. Faça um programa que leia um número real e calcule o
 //    quadrado deste número. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
+void q12() {
+    int numero, quadrado;
+    printf("Digite um número inteiro");
+    scanf("%d", &numero);
+    quadrado = numero*numero;
+    printf("O quadrado do número digitado é: %d\n" , quadrado);
+}
 
 //13. Faça um programa que leia o saldo de uma conta poupança e
 //    imprima o novo saldo, considerando um reajuste de 2%.
-
+void q13(){
+    float num, num1;
+    printf("Digite o valor do saldo: \n");
+    scanf("%f", &num);
+    num1 = (num*0.02)+num;
+    printf("O saldo da poupança é: %.2f\n",num1 );
+}
 //14. Faça um programa que leia a base e a altura de um retângulo
 //    e imprima o perímetro (base + altura) e a área (base * altura).
 
@@ -177,6 +190,6 @@ void q11(){
 //    necessário também ler o valor da cotação do dólar.
 
 int main () {
-    q11();
+    q13();
     return EXIT_SUCCESS;
 }

@@ -229,6 +229,20 @@ void q18(){
 //    programa deve imprimir o valor da prestação atrasada, o período
 //    de atraso, os juros que serão cobrados pelo período de atraso, o
 //    valor da prestação acrescido dos juros. Considere juros simples.
+void q19(){
+    float prestacao, taxa, juros, periodo, valor;
+    printf("Digite o valor da prestação:\n");
+    scanf("%f", &prestacao);
+    printf("Digite a quantia de dias em atraso:\n");
+    scanf("%f", &periodo);
+    printf("Digite o valor da taxa de juros ao dia:\n");
+    scanf("%f", &taxa);
+    juros = (taxa/100)*prestacao;
+    valor = juros+prestacao;
+    printf("Prestação em atraso: %.2f/n Periodo em atraso: %.2f\n Total de juros: %.2f\n Valor Total: %.2f\n ", prestacao, periodo, juros, valor);
+    
+
+}
 
 //20. Faça um programa que efetue a apresentação do valor da conversão
 //    em real (R$) de um valor lido em dólar (US$). Para isso, será
@@ -244,6 +258,6 @@ void q20(){
 }
 
 int main () {
-    q20();
+    q19();
     return EXIT_SUCCESS;
 }

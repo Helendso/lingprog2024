@@ -66,7 +66,7 @@ void q07(){
     printf ("Digite o Endereço: \n");
     fgets(endereco, 50, stdin);
     printf ("Digite o Telefone: \n");
-    fgets(numero, 50, stdin);
+    scanf( " %50[^\n]" , numero);
     printf("Nome: %s \n Endereço: %s \n Telefone: %s \n", nome, endereco, numero);
     
 
@@ -258,6 +258,6 @@ void q20(){
 }
 
 int main () {
-    q19();
+    q07();
     return EXIT_SUCCESS;
 }

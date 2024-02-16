@@ -210,6 +210,18 @@ void q17(){
 //    • L = Litros de combustível consumidos
 //    Ao final, o programa deverá imprimir a distância percorrida e a
 //    quantidade de litros consumidos na viagem.
+void q18(){
+    float D, T, V, L, distancia, consumo;
+    printf("Digite o tempo de viagem em minutos:\n");
+    scanf("%f", &T);
+    printf("Digite velocidade média:\n");
+    scanf("%f", &V);
+    distancia = ((T/60.0)*V);
+    consumo = distancia/12.0;
+    printf("A distância percorrida foi: %.2fKm\n O Consumo foi: %.2f Litros/Km \n", distancia, consumo);
+    
+    
+}
 
 //19. Faça um programa que calcule o valor de uma prestação em atraso.
 //    Para isso, o programa deve ler o valor da prestação vencida, a
@@ -221,8 +233,17 @@ void q17(){
 //20. Faça um programa que efetue a apresentação do valor da conversão
 //    em real (R$) de um valor lido em dólar (US$). Para isso, será
 //    necessário também ler o valor da cotação do dólar.
+void q20(){
+     float dolar, real, cotacao;
+    printf("Digite a quantia em Dólar:\n");
+    scanf("%f", &dolar);
+    printf("Digite o valor atual da cotação do Dólar:\n");
+    scanf("%f", &cotacao);
+    real = dolar*cotacao;
+    printf("O valor da conversão em reais é:%.2f\n", real);
+}
 
 int main () {
-    q17();
+    q20();
     return EXIT_SUCCESS;
 }

@@ -239,7 +239,7 @@ void q19(){
     scanf("%f", &taxa);
     juros = (taxa/100)*prestacao;
     valor = juros+prestacao;
-    printf("Prestação em atraso: %.2f/n Periodo em atraso: %.2f\n Total de juros: %.2f\n Valor Total: %.2f\n ", prestacao, periodo, juros, valor);
+    printf(" Prestação em atraso: %.2f\n Periodo em atraso: %.2f\n Total de juros: %.2f\n Valor Total: %.2f\n ", prestacao, periodo, juros, valor);
     
 
 }

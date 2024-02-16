@@ -149,15 +149,42 @@ void q13(){
 }
 //14. Faça um programa que leia a base e a altura de um retângulo
 //    e imprima o perímetro (base + altura) e a área (base * altura).
-
+void q14(){
+    float num, num1, perimetro, area;
+    printf("Digite o valor da base do retângulo: \n");
+    scanf("%f", &num);
+    printf("Digite o valor da altura do retângulo: \n");
+    scanf("%f", &num1);
+    perimetro = (num+num1);
+    area = (num*num1);
+    printf("O perimetro do retangulo é: %.2f e a área é: %.2f\n",perimetro, area );
+}
 //15. Faça um programa que leia o valor de um produto, o percentual
 //    do desconto desejado e imprima o valor do desconto e o valor
 //    do produto subtraindo o desconto.
-
+void q15(){
+    float num, num1, desconto, valor;
+    printf("Digite o valor do produto: \n");
+    scanf("%f", &num);
+    printf("Digite o valor do desconto: \n");
+    scanf("%f", &num1);
+    desconto = (num1/100)*num;
+    valor = (num-desconto);
+    printf("O valor do desconto é: %.2f \n O Valor final do produto é: %.2f\n",desconto, valor );
+}
 //16. Faça um programa que calcule o reajuste do salário de um
 //    funcionário. Para isso, o programa deverá ler o salário atual
 //    do funcionário e ler o percentual de reajuste. Ao final imprimir
 //    o valor do novo salário.
+void q16(){
+    float salario, reajuste, salnovo;
+    printf("Digite o valor do salário: \n");
+    scanf("%f", &salario);
+    printf("Digite o valor do reajuste: \n");
+    scanf("%f", &reajuste);
+    salnovo = (reajuste/100)*salario+salario;
+    printf("O Valor do salário atual é: %.2f\n",salnovo);
+}
 
 //17. Faça um programa que calcule a conversão entre graus centígrados
 //    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
@@ -190,6 +217,6 @@ void q13(){
 //    necessário também ler o valor da cotação do dólar.
 
 int main () {
-    q13();
+    q16();
     return EXIT_SUCCESS;
 }

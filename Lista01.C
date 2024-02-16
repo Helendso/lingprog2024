@@ -191,7 +191,13 @@ void q16(){
 //    com base na fórmula a seguir. Após calcular o programa deve
 //    imprimir o resultado da conversão.
 //    F = (9 x C +160) / 5
-
+void q17(){
+    float Celsius, Fahrenheit;
+    printf("Digite o valor da temperatura em Celsius\n");
+    scanf("%f", &Celsius);
+    Fahrenheit = (9*Celsius+160) / 5;
+    printf("A temperatura em Fahrenheit é:%.2f\n", Fahrenheit);
+}
 //18. Faça um programa que calcule a quantidade de litros de combustível
 //    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
 //    12 km por litro de combustível. O programa deverá ler o tempo
@@ -217,6 +223,6 @@ void q16(){
 //    necessário também ler o valor da cotação do dólar.
 
 int main () {
-    q16();
+    q17();
     return EXIT_SUCCESS;
 }

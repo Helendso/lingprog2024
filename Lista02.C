@@ -8,17 +8,49 @@ EXERCÍCIOS DO CAPÍTULO 2
 
 //1. Faça um programa que leia dois valores numéricos inteiros e efetue a adição, caso o resultado seja maior que 10, apresentá-lo.
 void questao01() {
+	 int num, num1, total;
+    printf("Digite o primeiro número\n");
+    scanf("%d", &num);
+    printf("Digite o segundo número\n");
+    scanf("%d", &num1);
+    total = (num+num1);
+	if (total > 10)
+    printf("O valor da soma é: %d\n", total);
 
 }
 
 //2. Faça um programa que leia dois valores inteiros e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8, caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
 void questao02() {
+	int num, num1,soma, sub, total;
+    printf("Digite o primeiro número\n");
+    scanf("%d", &num);
+    printf("Digite o segundo número\n");
+    scanf("%d", &num1);
+    total = (num+num1);
+	if (total > 20){
+	soma = (total + 8);
+	printf("O valor da operação é: %d\n", soma);
+	}
+	if (total <= 20){
+	sub = (total - 5);
 
+    printf("O valor da operação é: %d\n", sub);
+	}
 }
 
 //3. Faça um programa que leia um número e imprima uma das duas mensagens: "É múltiplo de 3"ou "Não é múltiplo de 3".
 void questao03() {
 	
+	int numero, div;
+    printf("Digite um número");
+    scanf("%d", &numero);
+	div %= (numero/3);
+    if ( div = 0)
+	{
+	printf("É multiplo de 3"); }
+	else
+	{
+	printf("Não é multiplo de 3"); }
 }
 
 //4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.

@@ -41,20 +41,30 @@ void questao02() {
 //3. Faça um programa que leia um número e imprima uma das duas mensagens: "É múltiplo de 3"ou "Não é múltiplo de 3".
 void questao03() {
 	
-	int numero, div;
-    printf("Digite um número");
+	int numero, resto;
+    printf("Digite um número\n");
     scanf("%d", &numero);
-	div %= (numero/3);
-    if ( div = 0)
+	resto = numero % 3;
+    if ( resto == 0)
 	{
-	printf("É multiplo de 3"); }
+	printf("É multiplo de 3\n"); }
 	else
 	{
-	printf("Não é multiplo de 3"); }
+	printf("Não é multiplo de 3\n"); }
 }
 
 //4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
 void questao04() {
+	int numero, resto;
+    printf("Digite um número\n");
+    scanf("%d", &numero);
+	resto = numero % 5;
+    if ( resto == 0)
+	{
+	printf("É divisível por 5\n"); }
+	else
+	{
+	printf("Não é divisível por 5\n"); }
 	
 }
 
@@ -229,9 +239,27 @@ int main() {
 		case 2:
 			questao02();
 			break;
+		case 3:
+			questao03();
+			break;
+		case 4:
+			questao04();
+			break;
 		case 5:
 			questao05();
-			break;			
+			break;
+		case 6:
+			questao06();
+			break;
+		case 7:
+			questao07();
+			break;	
+		case 8:
+			questao08();
+			break;	
+		case 9:
+			questao09();
+			break;	
 		case 10:
 			questao10();
 			break;

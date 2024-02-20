@@ -70,6 +70,18 @@ void questao04() {
 
 //5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 void questao05() {
+	int numero, resto, resto1;
+    printf("Digite um número\n");
+    scanf("%d", &numero);
+	resto = numero % 3;
+    if ( resto == 0)
+	resto1 = numero % 7;
+	if ( resto1 == 0)
+	{
+	printf("É divisível por 3 e 7\n"); }
+	else
+	{
+	printf("Não é divisível por 3 e 7\n"); }
 
 }
 

@@ -147,7 +147,9 @@ void questao09() {
 	if (nascimento>1900){
 	printf("Digite o ano de atual no formato AAAA\n");
     scanf("%d", &atual);}
-	if (atual>1900) {
+	if (nascimento>atual) {
+	printf("Dados inválidos!!! \nAno de nascimento não pode ser maior que ano atual\n");}
+	else if (atual>1900) {
 	idade = (atual-nascimento);
 	printf("A idade para o ano informado é:%d \n", idade); }
 	else

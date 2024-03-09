@@ -164,24 +164,39 @@ void questao10() {
 	int num, num1, num2, menor, maior;
 	printf ("Digite três numeros inteiros\n");
 	scanf("%d %d %d", &num, &num1, &num2);
+	 
+	 menor=num;
+	 maior=num;
+	 
+	 if(menor>num1)
+		menor=num1;
+	if(menor>num2)
+		menor=num2;
 	
-	if (num<num1)
-		{if (num<num2)
-		menor = num;
-	else 
-		menor = num2;}
-	
-	else  (num1<num2){
-			menor = num1;}
-		else {
-			menor = num2;
-}
+	if (maior<num1)
+		maior=num1;
+	if (maior<num2)
+		maior=num2;
 
+	printf("O Menor número é: %d e o Maior número é: %d \n", menor, maior);
 	
 }
 
 //11. Faça um programa que leia 3 números e imprima o maior deles.
 void questao11() {
+	
+	int num, num1, num2, menor, maior;
+	printf ("Digite três numeros inteiros\n");
+	scanf("%d %d %d", &num, &num1, &num2);
+	
+	maior=num;
+
+	if (maior<num1)
+		maior=num1;
+	if (maior<num2)
+		maior=num2;
+
+printf("Maior número é: %d \n",maior);
 	
 }
 
@@ -191,11 +206,50 @@ void questao11() {
 //• Se é maior de 65 anos
 void questao12() {
 	
+	int idade;
+	printf("Digite a sua idade:\n");
+	scanf("%d", &idade);
+
+	if (idade>18)
+		printf("É maior de idade.\n");
+
+	if (idade<18)
+		printf("É menor de idade.\n");
+
+	if (idade>65)
+		printf("É maior de 65 anos.\n");
+	
 }
 
 //13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota da
-//prova 2 de umaluno. O programa deve imprimir o nome, a nota da prova 1, a nota da prova 2, a média das notas e uma das mensagens: "Aprovado", "Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para reprovação e as demais em prova final).
+//prova 2 de um aluno. O programa deve imprimir o nome, a nota da prova 1, a nota da prova 2, a média das notas e uma das mensagens: "Aprovado", "Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para reprovação e as demais em prova final).
 void questao13() {
+
+
+	float prova1, prova2, media;	
+	char nome[30];
+	
+	printf ("Digite o nome: \n");
+    scanf( " %30[^\n]" , nome);
+
+	printf("Digite a nota da prova 1:\n");
+	scanf("%f", &prova1);
+
+	printf("Digite a nota da prova 2:\n");
+	scanf("%f", &prova2);
+
+	media = (prova1+prova2)/2;
+
+	if (media>=7)
+		printf("Nome: %s \nProva 1: %.2f \nProva 2: %.2f \nMédia %.2f \nAprovado\n", nome, prova1, prova2, media);
+	
+	else if (media<3)
+		printf("Nome: %s \nProva 1: %.2f \nProva 2: %.2f \nMédia %.2f \nReprovado\n", nome, prova1, prova2, media);
+	
+	else if (media>3)
+		 if(media<7)
+		printf("Nome: %s \nProva 1: %.2f \nProva 2: %.2f \nMédia %.2f \nProva Final\n", nome, prova1, prova2, media);
+	
 	
 }
 
@@ -337,6 +391,53 @@ int main() {
 		case 10:
 			questao10();
 			break;
+		case 11:
+			questao11();
+			break;
+		case 12:
+			questao12();
+			break;
+		case 13:
+			questao13();
+			break;
+		case 14:
+			questao14();
+			break;
+		case 15:
+			questao15();
+			break;
+		case 16:
+			questao16();
+			break;
+		case 17:
+			questao17();
+			break;
+		case 18:
+			questao18();
+			break;
+		case 19:
+			questao19();
+			break;
+		case 20:
+			questao20();
+			break;
+		case 21:
+			questao21();
+			break;
+		case 22:
+			questao22();
+			break;
+		case 23:
+			questao23();
+			break;
+		case 24:
+			questao24();
+			break;
+		case 25:
+			questao25();
+			break;
+		
+	
 		default:
 			printf("Opção inválida!");
 	}

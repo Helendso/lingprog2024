@@ -262,6 +262,25 @@ void questao13() {
 //Maior que R$2000,00 30%
 void questao14() {
 	
+	float salario, desconto;
+	printf("Informe o salário\n");
+	scanf("%f", &salario);
+
+	if (salario<=600)
+		printf("Isento\n");
+
+	else if (salario>600 && salario<=1200)
+		{desconto=salario*0.2;
+		 printf("Para o salário: %.2f o desconto é de: %.2f ", salario, desconto);
+		}
+    else if (salario>1200 && salario<=2000)
+		{desconto=salario*0.25;
+		 printf("Para o salário: %.2f o desconto é de: %.2f  ", salario, desconto);
+		}
+	else if (salario>2000)
+		{desconto=salario*0.3;
+		 printf("Para o salário: %.2f o desconto é de: %.2f  ", salario, desconto);
+}
 }
 
 //15. Um comerciante comprou umproduto e quer vendê-lo com umlucro de 45% se o valor

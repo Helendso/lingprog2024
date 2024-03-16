@@ -283,12 +283,24 @@ void questao14() {
 }
 }
 
-//15. Um comerciante comprou umproduto e quer vendê-lo com umlucro de 45% se o valor
+//15. Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o valor
 //da compra for menor que R$20,00, caso contrário, o lucro será de 30%. Faça um programa que leia o valor do produto e imprima o valor da venda.
 void questao15() {
 	
-}
+	float produto, total;
+	printf("Informe o valor do produto\n");
+	scanf("%f", &produto);
 
+	if (produto<20){
+		total = (produto*0.45)+produto;
+		printf("O valor do produto é: %.2f\n e o valor venda é: %.2f\n", produto, total);
+	}
+	else if (produto>=20)
+		{total=(produto*0.30)+produto;
+		 printf("O valor do produto é: %.2f\n e o valor venda é: %.2f\n", produto, total);
+		}
+    
+}
 //16. A confederação brasileira de natação irá promover eliminatórias para o próximo
 //mundial. Faça um programa que receba a idade de um nadador e imprima a sua categoria segundo a tabela a seguir:
 //Categoria Idade
@@ -298,10 +310,29 @@ void questao15() {
 //Juvenil B 14 - 17 anos
 //Sênior maiores de 18 anos
 void questao16() {
+
+	int idade;
+	printf("Digite a sua idade:\n");
+	scanf("%d", &idade);
+
+	if (idade>=5 && idade<=7)
+	printf("A sua categoria é a Infantil A\n");
+
+	else if (idade>=8 && idade<=10)
+	printf("A sua categoria é a Infantil B\n");
+
+	else if (idade>=11 && idade<=13)
+	printf("A sua categoria é a Juvenil A\n");
+
+	else if (idade>=14 && idade<=17)
+	printf("A sua categoria é a Juvenil B\n");
+
+	else if (idade>18)
+	printf("A sua categoria é a Sênior\n");
 	
 }
 
-//17. Depois da liberação do governo para as mensalidades dos planos de saúde, as pessoas começaram a fazer pesquisas para descobrir um bom plano, não muito caro. Umvendedor de um plano de saúde apresentou a tabela a seguir. Faça um programa que entre com o nome e a idade de uma pessoa e imprima o nome e o valor que ela deverá pagar.
+//17. Depois da liberação do governo para as mensalidades dos planos de saúde, as pessoas começaram a fazer pesquisas para descobrir um bom plano, não muito caro. Um vendedor de um plano de saúde apresentou a tabela a seguir. Faça um programa que entre com o nome e a idade de uma pessoa e imprima o nome e o valor que ela deverá pagar.
 //Idade Valor
 //Até 10 anos R$30,00
 //Acima de 10 até 29 anos R$60,00
@@ -311,9 +342,38 @@ void questao16() {
 //Maior que 65 anos R$400,00
 void questao17() {
 	
+	int idade;
+	char nome[30];
+
+		printf("Digite a sua idade:\n");
+	scanf("%d", &idade);
+	
+		printf ("Digite o nome: \n");
+    scanf( " %30[^\n]" , nome);
+
+	if (idade<=10)
+	printf(" %s, o valor do plano para essa idade é: 30,00\n", nome);
+
+	else if (idade>10 && idade<=29)
+	printf(" %s, o valor do plano para essa idade é: 60,00\n", nome);
+
+	else if (idade>29  && idade<=45)
+	printf(" %s, o valor do plano para essa idade é: 120,00\n", nome);
+
+	else if (idade>45  && idade<=59)
+	printf(" %s, o valor do plano para essa idade é: 150,00\n", nome);
+
+	else if (idade>59  && idade<=65)
+	printf(" %s, o valor do plano para essa idade é: 250,00\n", nome);
+
+	else if (idade>65)
+	printf(" %s, o valor do plano para essa idade é: 400,00\n", nome);
+
+	
+	
 }
 
-//18. Faça um programa que leia um número inteiro entre 1 e 12 e escreva o mês correspondente. Caso o usuário digite umnúmero fora desse intervalo, deverá aparecer uma mensagem informando que não existe mês com este número. Utilize o switch para este problema.
+//18. Faça um programa que leia um número inteiro entre 1 e 12 e escreva o mês correspondente. Caso o usuário digite um número fora desse intervalo, deverá aparecer uma mensagem informando que não existe mês com este número. Utilize o switch para este problema.
 void questao18() {
 	
 }

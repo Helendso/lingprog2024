@@ -375,7 +375,51 @@ void questao17() {
 
 //18. Faça um programa que leia um número inteiro entre 1 e 12 e escreva o mês correspondente. Caso o usuário digite um número fora desse intervalo, deverá aparecer uma mensagem informando que não existe mês com este número. Utilize o switch para este problema.
 void questao18() {
-	
+
+	int opcao;
+	printf("Digite o número do mês: ");
+	scanf("%d", &opcao);
+	switch (opcao) {
+		case 1:
+			printf("O mês correspondente ao número digitado é: JANEIRO\n");
+			break;
+		case 2:
+			printf("O mês correspondente ao número digitado é: FEVEREIRO\n");
+			break;
+		case 3:
+			printf("O mês correspondente ao número digitado é: MARÇO\n");
+			break;
+		case 4:
+			printf("O mês correspondente ao número digitado é: ABRIL\n");
+			break;
+		case 5:
+			printf("O mês correspondente ao número digitado é: MAIO\n");
+			break;
+		case 6:
+			printf("O mês correspondente ao número digitado é: JUNHO\n");
+			break;
+		case 7:
+			printf("O mês correspondente ao número digitado é: JULHO\n");
+			break;
+	    case 8:
+			printf("O mês correspondente ao número digitado é: AGOSTO\n");
+			break;
+		case 9:
+			printf("O mês correspondente ao número digitado é: SETEMBRO\n");
+			break;
+		case 10:
+			printf("O mês correspondente ao número digitado é: OUTUBRO\n");
+			break;
+		case 11:
+			printf("O mês correspondente ao número digitado é: NOVEMBRO\n");
+			break;
+		case 12:
+			printf("O mês correspondente ao número digitado é: DEZEMBRO\n");
+			break;
+
+		default:
+			printf("Opção digitada inválida!\n");
+}
 }
 
 //19. Em um campeonato nacional de arco-e-flecha, tem-se equipes de três jogadores para cada estado. Sabendo-se que os arqueiros de uma equipe não obtiveram o mesmo número de pontos, criar um programa que informe se uma equipe foi classificada, de acordo com a seguinte especificação:

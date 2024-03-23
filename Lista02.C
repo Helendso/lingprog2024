@@ -427,10 +427,54 @@ void questao18() {
 //• Mostrar esses valores em ordem decrescente;
 //• Se a soma dos pontos for maior do que 100, imprimir a média aritmética entre eles, caso contrário, imprimir a mensagem "Equipe desclassificada".
 void questao19() {
+	float ponto1, ponto2, ponto3, menor, medio, maior, media, soma;
+	printf ("Digite a pontuação do primeiro arqueiro\n");
+	scanf("%f", &ponto1);
+	
+	printf ("Digite a pontuação do segundo arqueiro\n");
+	scanf("%f", &ponto2);
+	
+	printf ("Digite a pontuação do terceiro arqueiro\n");
+	scanf("%f", &ponto3);
+
+	 menor=ponto1;
+	 maior=ponto1;
+	 media=(ponto1+ponto2+ponto3)/3;
+	 soma=(ponto1+ponto2+ponto3);
+	if (soma>100)
+	{
+	if(menor>ponto2)
+		menor=ponto2;
+	if(menor>ponto3)
+		menor=ponto3;
+	
+	if (maior<ponto2)
+		maior=ponto2;
+	if (maior<ponto3)
+		maior=ponto3;
+
+	if (ponto1!=maior && ponto1!=menor) 
+		medio = ponto1;
+	
+	if (ponto2!=maior&&ponto2!=menor)
+		medio = ponto2;
+		
+		else medio = ponto3;
+		
+		printf("A pontuação em ordem decrescente é: %.0f %.0f %.0f e a média é: %.2f \n", maior, medio, menor, media);
+	}
+
+	else 
+		printf("Equipe desclassificada!");
+
+
 	
 }
+	
 
-//20. O banco XXX concederá um crédito especial com juros de 2% aos seus clientes de acordo com o saldomédio no último ano. Faça um programa que leia o saldo médio de um cliente e calcule o valor do crédito de acordo com a tabela a seguir. O programa deve imprimir uma mensagem informando o saldo médio e o valor de crédito.
+
+
+//20. O banco XXX concederá um crédito especial com juros de 2% aos seus clientes de acordo com o saldo médio no último ano. Faça um programa que leia o saldo médio de um cliente e calcule o valor do crédito de acordo com a tabela a seguir. O programa deve imprimir uma mensagem informando o saldo médio e o valor de crédito.
 //Saldo Médio Percentual
 //de 0 a 500 nenhum crédito
 //de 501 a 1000 30% do valor do saldo médio

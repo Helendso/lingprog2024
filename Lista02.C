@@ -481,31 +481,29 @@ void questao19() {
 //de 1001 a 3000 40% do valor do saldo médio
 //acima de 3001 50% do valor do saldo médio
 void questao20() {
+	
 	float saldo, credito;
 
-	printf("Digite o valor do saldo médio do cliente\n");
-	scanf("%f", &saldo);
+	printf("Digite o valor do saldo médio do cliente:\n");
+	  scanf("%f", &saldo);
 
 	if (saldo<=500);
-	printf("Sem crédito disponível\n");
+	  printf("Sem crédito disponível!!\n");
 
 	if (saldo>500 && saldo<=1000)
-	{credito=(saldo*0.3);
-	printf("Saldo médio: %.2f\nCrédito disponível: %.2f\n", saldo, credito);}
+	 {credito=(saldo*0.3);
+	  printf("Saldo médio: %.2f\nCrédito disponível: %.2f\n", saldo, credito);}
 	
 	if (saldo>1000 && saldo<=3000)
-	{credito=(saldo*0.4);
-	printf("Saldo médio: %.2f\nCrédito disponível: %.2f\n", saldo, credito);}
+	  {credito=(saldo*0.4);
+	   printf("Saldo médio: %.2f\nCrédito disponível: %.2f\n", saldo, credito);}
 	
 	if (saldo>3001)
-	{credito=(saldo*0.5);
-	
-	printf("Saldo médio: %.2f\nCrédito disponível: %.2f\n", saldo, credito);}
+	  {credito=(saldo*0.5);
+		
+		printf("Saldo médio: %.2f\nCrédito disponível: %.2f\n", saldo, credito);}
 
-	
-
-
-}
+	}
 
 //21. A biblioteca de uma Universidade deseja fazer um programa que leia o nome do livro que será emprestado, o tipo de usuário (professor ou aluno) e possa imprimir um recibo conforme mostrado a seguir. Considerar que o professor tem dez dias para devolver o livro e o aluno só três dias.
 //• Nome do livro:
@@ -513,6 +511,37 @@ void questao20() {
 //• Total de dias:
 void questao21() {
 	
+	
+	char nome[50], livro[50];
+	int usuario;
+
+	 printf("Digite o Nome:");
+				scanf("%50[^\n]",&nome);
+		    printf("Digite o Nome do Livro:");
+				scanf("%50[^\n]",&livro);
+	
+	const char menu[500] = "\n===================================\n          TIPO DE USUÁRIO\n[1] - Professor\n[2] - Aluno\n===================================\n";
+	printf("%s", menu);
+
+	printf("Digite a opção para selecionar o tipo de usuário:\n");
+	scanf("%d", &usuario);
+	
+	 switch (usuario) {
+		case 1:
+
+		   printf("\tRECIBO\n Usuário: %s\n Livro: %s\nA data para entrega do livro são de 10 dias a contar da data de hoje.\n", nome, livro);
+		break;
+
+		case 2:
+			
+		   printf("\tRECIBO\n Usuário: %s\n Livro: %s\nA data para entrega do livro são de 3 dias a contar da data de hoje.\n", nome, livro);
+		break;
+
+		default:
+		  		printf("Opção digitada inválida!!\n");
+
+		
+	}
 }
 
 //22. Construa um programa que leia o percurso em quilómetros, o tipo do carro e informe o consumo estimado de combustível, sabendo-se que umcarro tipo C faz 12 kmcom umlitro de gasolina, um tipo B faz 9 kme o tipo C, 8 kmpor litro.

@@ -512,14 +512,9 @@ void questao20() {
 void questao21() {
 	
 	
-	char nome[50], livro[50];
+	const char nome[50], livro[50];
 	int usuario;
 
-	 printf("Digite o Nome:");
-				scanf("%50[^\n]",&nome);
-		    printf("Digite o Nome do Livro:");
-				scanf("%50[^\n]",&livro);
-	
 	const char menu[500] = "\n===================================\n          TIPO DE USUÁRIO\n[1] - Professor\n[2] - Aluno\n===================================\n";
 	printf("%s", menu);
 
@@ -528,13 +523,21 @@ void questao21() {
 	
 	 switch (usuario) {
 		case 1:
+		printf("Digite o Nome:\n");
+				fgets(nome, [50], stdin);
+		printf("Digite o Nome do Livro:\n");
+				fgets(livro, [50], stdin);
 
-		   printf("\tRECIBO\n Usuário: %s\n Livro: %s\nA data para entrega do livro são de 10 dias a contar da data de hoje.\n", nome, livro);
+		   printf("\t\n\n\n\nRECIBO\n Usuário: %s\n Livro: %s\nA data para entrega do livro são de 10 dias a contar da data de hoje.\n", nome, livro);
 		break;
 
 		case 2:
-			
-		   printf("\tRECIBO\n Usuário: %s\n Livro: %s\nA data para entrega do livro são de 3 dias a contar da data de hoje.\n", nome, livro);
+			printf("Digite o Nome:");
+				scanf( " %s", nome);
+		    printf("Digite o Nome do Livro:");
+				scanf( " %s", livro);
+
+		   printf("\t\n\n\n\nRECIBO\n Usuário: %s\n Livro: %s\nA data para entrega do livro são de 3 dias a contar da data de hoje.\n", nome, livro);
 		break;
 
 		default:

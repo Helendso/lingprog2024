@@ -481,7 +481,27 @@ void questao19() {
 //de 1001 a 3000 40% do valor do saldo médio
 //acima de 3001 50% do valor do saldo médio
 void questao20() {
+	float saldo, credito;
+
+	printf("Digite o valor do saldo médio do cliente");
+	scanf("%.2f", &saldo);
+
+	if (saldo<=500)
+	printf("Sem crédito disponível");
 	
+	if (saldo>500 && <=1000)
+	credito=(saldo*0.3)
+	printf("O saldo médio do cliente é %.2f e o crédito disponível é:", saldo, credito);
+	
+	if (saldo>1000 && <=3000)
+	credito=(saldo*0.4)
+	printf("O saldo médio do cliente é %.2f e o crédito disponível é:", saldo, credito);
+
+	if (saldo>3001)
+	credito=(saldo*0.5)
+	printf("O saldo médio do cliente é %.2f e o crédito disponível é:", saldo, credito);
+
+
 }
 
 //21. A biblioteca de uma Universidade deseja fazer um programa que leia o nome do livro que será emprestado, o tipo de usuário (professor ou aluno) e possa imprimir um recibo conforme mostrado a seguir. Considerar que o professor tem dez dias para devolver o livro e o aluno só três dias.

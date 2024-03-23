@@ -483,23 +483,26 @@ void questao19() {
 void questao20() {
 	float saldo, credito;
 
-	printf("Digite o valor do saldo médio do cliente");
-	scanf("%.2f", &saldo);
+	printf("Digite o valor do saldo médio do cliente\n");
+	scanf("%f", &saldo);
 
-	if (saldo<=500)
-	printf("Sem crédito disponível");
-	
-	if (saldo>500 && <=1000)
-	credito=(saldo*0.3)
-	printf("O saldo médio do cliente é %.2f e o crédito disponível é:", saldo, credito);
-	
-	if (saldo>1000 && <=3000)
-	credito=(saldo*0.4)
-	printf("O saldo médio do cliente é %.2f e o crédito disponível é:", saldo, credito);
+	if (saldo<=500);
+	printf("Sem crédito disponível\n");
 
+	if (saldo>500 && saldo<=1000)
+	{credito=(saldo*0.3);
+	printf("Saldo médio: %.2f\nCrédito disponível: %.2f\n", saldo, credito);}
+	
+	if (saldo>1000 && saldo<=3000)
+	{credito=(saldo*0.4);
+	printf("Saldo médio: %.2f\nCrédito disponível: %.2f\n", saldo, credito);}
+	
 	if (saldo>3001)
-	credito=(saldo*0.5)
-	printf("O saldo médio do cliente é %.2f e o crédito disponível é:", saldo, credito);
+	{credito=(saldo*0.5);
+	
+	printf("Saldo médio: %.2f\nCrédito disponível: %.2f\n", saldo, credito);}
+
+	
 
 
 }

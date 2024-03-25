@@ -547,11 +547,44 @@ void questao21() {
 	}
 }
 
-//22. Construa um programa que leia o percurso em quilómetros, o tipo do carro e informe o consumo estimado de combustível, sabendo-se que umcarro tipo C faz 12 kmcom umlitro de gasolina, um tipo B faz 9 kme o tipo C, 8 kmpor litro.
+//22. Construa um programa que leia o percurso em quilómetros, o tipo do carro e informe o consumo estimado de combustível, sabendo-se que um carro tipo A faz 12 km com um litro de gasolina, um tipo B faz 9 km e o tipo C, 8 km por litro.
 void questao22() {
-	
-}
+	 
+	 float percurso, consumo;
+	 int carro;
 
+	printf("Digite o valor do percurso em KM:\n");
+	scanf("%f", &percurso);
+
+const char menu[500] = "\n===================================\n          MODELO DE CARRO\n[1] - HB20\n[2] - JEEP RENEGADE\n[3] - JETTA\n===================================\n";
+	printf("%s", menu);
+	
+	printf("Digite a opção para selecionar o tipo de carro:\n");
+	scanf("%d", &carro);
+
+
+	switch (carro) {
+
+	case 1:
+    consumo=(percurso/12);
+	printf("O consumo estimado para o carro informado é: %.2f Litros\n ", consumo);
+	break;
+
+	case 2:
+    consumo=(percurso/9);
+	printf("O consumo estimado para o carro informado é: %.2f Litros\n ", consumo);
+	break;
+
+	case 3:
+    consumo=(percurso/8);
+	printf("O consumo estimado para o carro informado é: %.2f Litros\n", consumo);
+	break;
+
+	default:
+		printf("Opção digitada inválida!!\n");
+	}
+
+}
 //23. Crie um programa que informe a quantidade total de calorias de uma refeição a partir da escolha do usuário que deverá informar o prato, a sobremesa, e bebida conforme a tabela a seguir.
 //Prato Sobremesa Bebida
 //Vegetariano 180cal Abacaxi 75cal Chá 20cal
@@ -562,7 +595,7 @@ void questao23() {
 
 }
 
-//24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para cobrar dosmotoristas o DUT. Sabendo-se que o mês em que o emplacamento do carro deve ser renovado é determinado pelo último número da placa do mesmo, faça um programa que, a partir da leitura da placa do carro, informe omês em que o emplacamento deve ser renovado.
+//24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para cobrar dos motoristas o DUT. Sabendo-se que o mês em que o emplacamento do carro deve ser renovado é determinado pelo último número da placa do mesmo, faça um programa que, a partir da leitura da placa do carro, informe omês em que o emplacamento deve ser renovado.
 void questao24() {
 	
 }

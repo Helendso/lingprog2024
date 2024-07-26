@@ -663,7 +663,16 @@ switch (bebida) {
 
 //24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para cobrar dos motoristas o DUT. Sabendo-se que o mês em que o emplacamento do carro deve ser renovado é determinado pelo último número da placa do mesmo, faça um programa que, a partir da leitura da placa do carro, informe omês em que o emplacamento deve ser renovado.
 void questao24() {
-	
+	int placa, milhar, centena, dezena;
+    printf("Digite o numero da placa do carro no formato <xxxx>: ");
+    scanf("%d", &placa);
+    milhar = placa / 1000;
+    placa = placa - (milhar * 1000);
+    centena = placa / 100;
+    placa = placa - (centena * 100);
+    dezena = placa / 10;
+    placa = placa - (dezena * 10);
+    printf("Mes: %d", placa);
 }
 
 //25. A prefeitura contratou uma firma especializada para manter os níveis de poluição considerados ideais para umpaís do 1º mundo. As indústrias, maiores responsáveis pela poluição, foram classificadas em três grupos. Sabendo-se que a escala utilizada varia de 0,05 e que o índice de poluição aceitável é até 0,25, fazer um programa que possa imprimir intimações de acordo com o índice e a tabela a seguir:

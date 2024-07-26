@@ -592,7 +592,73 @@ const char menu[500] = "\n===================================\n          MODELO 
 //Frango 250cal Mousse diet 170cal Suco de melão 100cal
 //Carne 350cal Mousse chocolate 200cal Refrigerante diet 65cal
 void questao23() {
-
+int calorias;
+        int prato, sobremesa, bebida;
+        printf("\nPrato");
+        printf("\n1 - Vegetariano");
+        printf("\n2 - Peixe");
+        printf("\n3 - Frango");
+        printf("\n4 - Carne");
+        printf("\nDigite a opcao: ");
+        scanf("%d", &prato);
+        printf("\nSobremesa");
+        printf("\n1 - Abacaxi");
+        printf("\n2 - Sorvete diet");
+        printf("\n3 - Mousse diet");
+        printf("\n4 - Mousse de chocolate");
+        printf("\nDigite a opcao: ");
+        scanf("%d", &sobremesa);
+        printf("\nBebida");
+        printf("\n1 - Cha");
+        printf("\n2 - Suco de laranja");
+        printf("\n3 - Suco de melao");
+        printf("\n4 - Refrigerante diet");
+        printf("\nDigite a opcao: ");
+        scanf("%d", &bebida);
+        switch (prato){
+        case 1:
+            calorias += 180;
+            break;
+        case 2:
+            calorias += 230;
+            break;
+        case 3:
+            calorias += 250;
+            break;
+        case 4:
+            calorias += 350;
+            break;
+        }
+        switch (sobremesa) {
+        case 1: 
+            calorias += 75;
+            break;
+        case 2:
+            calorias += 110;
+            break;
+        case 3:
+            calorias += 170;
+            break;
+        case 4:
+            calorias += 200;
+            break;
+}
+switch (bebida) {
+    case 1:
+     calorias += 20;
+            break;
+        case 2:
+            calorias += 70;
+            break;
+        case 3:
+            calorias += 100;
+            break;
+        case 4:
+            calorias += 75;
+            break;
+        default:
+            printf("Dieta inválida! \n");
+}
 }
 
 //24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para cobrar dos motoristas o DUT. Sabendo-se que o mês em que o emplacamento do carro deve ser renovado é determinado pelo último número da placa do mesmo, faça um programa que, a partir da leitura da placa do carro, informe omês em que o emplacamento deve ser renovado.

@@ -57,24 +57,23 @@ void q02() {
 //e tiver mais de 21 anos.
 void q04(){
     
-    for (int cont = 1; cont <= 20; cont++) {
+    for (int cont = 1; cont <=20; cont++) {
 		
     char nome[50];
-    int idade;
+	int idade;
     int sexo;
     
-    printf ("Nome: \n");
-    fgets(nome, 50, stdin);
-    
+	printf ("Digite o nome: \n");
+    scanf( " %30[^\n]" , nome);
+
     printf ("Idade: \n");
-    scanf ("%d ", &idade);
+    scanf ("%d[^\n] ", &idade);
     
     printf ("Digite 1 para Sexo Masculino e 2 para Feminino: \n");
-    scanf ("%d ", &sexo);
+    scanf ("%d[^\n] ", &sexo);
     
-    if (sexo == 1 && idade > 21)
-    printf("Nome: %s \n", nome);
-    
+    	if (sexo == 1 && idade > 21)
+	  printf("Nome: %s\n\n", nome);
 
     }
 }

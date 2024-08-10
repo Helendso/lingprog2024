@@ -80,8 +80,8 @@ void q04(){
 //5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 //sucessivas, crie um programa que calcule o produto de dois números inteiros
 //lidos. Suponha que os números lidos sejam positivos.
-	void q05(){
- int num, num1, produto;
+	void q05() {
+ int num, num1, soma=0, i;
 	
 	printf ("Digite um número\n");
 		scanf ("%d", &num);
@@ -89,16 +89,29 @@ void q04(){
 	printf ("Digite um número\n");
 		scanf ("%d", &num1);
 
-	
-	printf ("\n");
-	
+	 if (num > num1)
+   printf("Multiplicando deve ser menor que multiplicador \n");
+   else {
+
+	for (i=1; i <=num; i++) {
+		soma += num;
+  }
+  printf("Resultado: %d \n", soma);
+	}
 	}
 //6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
 //Observação: os dois primeiros termos desta série são 1 e 1 e os demais são gerados
 //a partir da soma dos anteriores. Exemplo:
 //• 1 + 1 = 2, terceiro termo;
 //• 1 + 2 = 3, quarto termo, etc.
+void q06() {
 
+
+
+
+
+
+}
 //7. Crie um programa que permita entrar com o nome, a nota da
 //prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 //nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,

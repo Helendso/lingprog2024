@@ -44,9 +44,53 @@ void q01() {
 }
 //2. Faça um programa que armazene 10 letras em um vetor e imprima uma listagem
 //numerada.
+void q02() {
+
+char letra[10];
+int i; 
+ 
+ printf("Digite 10 Letras\n");
+ scanf("%s" , &letra[0]);
+
+
+printf("Listagem numerada:");
+for (i=0; i<10; i++)
+printf("\n%d Letra: %c \n", i+1, letra[i]);
+
+}
+
+
 
 //3. Construa uma programa em C que armazene 15 números em um vetor e imprima
 //uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
+void q03() {
+
+int i, num[15]; 
+ 
+ 
+ printf("Digite 15 número \n");
+ for (i=0; i<15; i++)
+ scanf("%d" , &num[i]);
+
+
+printf("Listagem numerada:");
+for (i=0; i<15; i++)
+{
+ if ((num[i] % 2) == 0)
+printf("%d  %d par\n", i, num[i]);
+ else 
+printf("%d %d impar\n", i, num[i]);
+}
+
+}
+
+
+
+
+
+
+
+
 
 //4. Faça um programa que armazene 8 números em um vetor e imprima todos os
 //números. Ao final, imprima o total de números múltiplos de seis.
@@ -131,7 +175,7 @@ void q01() {
 //para a menor nota e imprima uma relação contendo todas as matrículas e médias.
 
 int main() {
-  exemploMatriz();
-  //q01();
+ // exemploMatriz();
+  q03();
   return EXIT_SUCCESS;
 }
